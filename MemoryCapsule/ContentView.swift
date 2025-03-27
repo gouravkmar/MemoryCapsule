@@ -8,27 +8,77 @@
 import SwiftUI
 import FirebaseCore
 struct ContentView: View {
+    @State private var image: UIImage?
+    @State private var isCameraPresented = false
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            Button(
-                "Save Data",
-                action: {
-                    testCloud()
-                    }
-                )
-            .padding()
-            .background(Color.red)
-            .textCase(.uppercase)
-            .foregroundColor(.white)
-            .cornerRadius(10)
+            if let image = image {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 300)
+            } else {
+                Text("No Image Selected")
+            }
+            Button("Test"){
+                fullTest()
+            }.padding()
+            .background(Color.blue)
+                .foregroundColor(.white)
+                .frame(width: 200, height: 50)
+                .cornerRadius(10)
+
+            Button("Take Photo") {
+                isCameraPresented = true
+            }.padding()
+                .frame(width: 200, height: 50)
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+            .sheet(isPresented: $isCameraPresented) {
+                CameraView(image: $image)
+            }
         }
-        .padding()
     }
 }
+
+
+struct CameraView: UIViewControllerRepresentable {
+    @Binding var image: UIImage?
+    @Environment(\.presentationMode) var presentationMode
+
+    class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+        var parent: CameraView
+
+        init(parent: CameraView) {
+            self.parent = parent
+        }
+
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            if let selectedImage = info[.originalImage] as? UIImage {
+                parent.image = selectedImage
+            }
+            parent.presentationMode.wrappedValue.dismiss()
+        }
+    }
+
+    func makeCoordinator() -> Coordinator {
+        return Coordinator(parent: self)
+    }
+
+    func makeUIViewController(context: Context) -> UIImagePickerController {
+        let picker = UIImagePickerController()
+        picker.delegate = context.coordinator
+        picker.sourceType = .camera // Opens the camera directly
+        picker.allowsEditing = false
+        return picker
+    }
+
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
+}
+
+
 
 func testFirestore() {
     let memory = Memory(
@@ -64,6 +114,17 @@ func testCloud(){
         let img = try? await CloudStorage.shared.downloadImage(urlString: urlStr!)
         print(img)
     }
+}
+func fullTest() {
+    guard let image = UIImage(systemName: "photo") else {return}
+    MemoryManager.shared.saveImageToMemory(image: image, imageTitle: "test")
+//    Task {
+
+        
+       
+        let memories = try?  MemoryManager.shared.fetchMemoriesForCurrentPlace()
+        print(memories)
+//    }
 }
 
 //#Preview {

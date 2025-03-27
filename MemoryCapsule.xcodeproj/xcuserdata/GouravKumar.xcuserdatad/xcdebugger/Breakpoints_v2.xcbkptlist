@@ -88,7 +88,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3F4CA7D5-696D-4F19-A968-B847E33B81DC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Services/FireStore/FireStoreManager.swift"
@@ -142,8 +142,8 @@
             filePath = "MemoryCapsule/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "testCloud()"
             landmarkType = "9">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "MemoryCapsule/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "testCloud()"
             landmarkType = "9">
          </BreakpointContent>
@@ -178,50 +178,6 @@
             endingLineNumber = "47"
             landmarkName = "downloadImage(urlString:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8D98BCDB-BA0E-4A49-8CAB-A8AE014A8968 - ce510bfdd4fd9563"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for MemoryCapsule.CloudStorage.downloadImage(urlString: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
-                  moduleName = "MemoryCapsule.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/CloudStorage/CloudStorage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47">
-               </Location>
-               <Location
-                  uuid = "8D98BCDB-BA0E-4A49-8CAB-A8AE014A8968 - 79054cfb0e16d161"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for MemoryCapsule.CloudStorage.downloadImage(urlString: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
-                  moduleName = "MemoryCapsule.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/CloudStorage/CloudStorage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47">
-               </Location>
-               <Location
-                  uuid = "8D98BCDB-BA0E-4A49-8CAB-A8AE014A8968 - 536f6c759d5bbf60"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for MemoryCapsule.CloudStorage.downloadImage(urlString: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
-                  moduleName = "MemoryCapsule.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/CloudStorage/CloudStorage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -234,40 +190,10 @@
             filePath = "MemoryCapsule/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
             landmarkName = "testCloud()"
             landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "84641CA3-40B8-428D-B348-ECAA909F7163 - bde43c895137dc57"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.testCloud() -&gt; ()"
-                  moduleName = "MemoryCapsule.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/MemoryCapsule/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65">
-               </Location>
-               <Location
-                  uuid = "84641CA3-40B8-428D-B348-ECAA909F7163 - 60cffd204cc56071"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(7) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.testCloud() -&gt; ()"
-                  moduleName = "MemoryCapsule.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/MemoryCapsule/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -284,64 +210,6 @@
             endingLineNumber = "43"
             landmarkName = "downloadImage(urlString:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F5668081-767F-4328-A729-716EE2668917 - 79054cfb0e16d0dd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for MemoryCapsule.CloudStorage.downloadImage(urlString: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
-                  moduleName = "MemoryCapsule.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/CloudStorage/CloudStorage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43">
-               </Location>
-               <Location
-                  uuid = "F5668081-767F-4328-A729-716EE2668917 - ce510bfdd4fd94df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for MemoryCapsule.CloudStorage.downloadImage(urlString: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
-                  moduleName = "MemoryCapsule.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/CloudStorage/CloudStorage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43">
-               </Location>
-               <Location
-                  uuid = "F5668081-767F-4328-A729-716EE2668917 - b50bdea205d2601e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for MemoryCapsule.CloudStorage.downloadImage(urlString: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
-                  moduleName = "MemoryCapsule.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/CloudStorage/CloudStorage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43">
-               </Location>
-               <Location
-                  uuid = "F5668081-767F-4328-A729-716EE2668917 - 536f6c759d5bbedc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for MemoryCapsule.CloudStorage.downloadImage(urlString: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
-                  moduleName = "MemoryCapsule.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/CloudStorage/CloudStorage.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -390,34 +258,546 @@
             endingLineNumber = "45"
             landmarkName = "downloadImage(urlString:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55395B1F-0AE1-4AE1-85A1-5F4F67E8F112"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MemoryCapsule/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "fullTest()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5AF43CBE-3D77-4FC3-8C87-CD936521BB2F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MemoryCapsule/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "fullTest()"
+            landmarkType = "9">
             <Locations>
                <Location
-                  uuid = "976DF0A4-87BB-4138-8CC3-94A3757D99AF - 79054cfb0e16d140"
+                  uuid = "5AF43CBE-3D77-4FC3-8C87-CD936521BB2F - 111dcc2b59561b64"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for MemoryCapsule.CloudStorage.downloadImage(urlString: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  symbolName = "MemoryCapsule.fullTest() -&gt; ()"
                   moduleName = "MemoryCapsule.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/CloudStorage/CloudStorage.swift"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/MemoryCapsule/ContentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46">
+                  startingLineNumber = "127"
+                  endingLineNumber = "127">
                </Location>
                <Location
-                  uuid = "976DF0A4-87BB-4138-8CC3-94A3757D99AF - 79054cfb0e16d09f"
+                  uuid = "5AF43CBE-3D77-4FC3-8C87-CD936521BB2F - 111dcc2b59561bda"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for MemoryCapsule.CloudStorage.downloadImage(urlString: Swift.String) async throws -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  symbolName = "MemoryCapsule.fullTest() -&gt; ()"
                   moduleName = "MemoryCapsule.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/CloudStorage/CloudStorage.swift"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/MemoryCapsule/ContentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45">
+                  startingLineNumber = "125"
+                  endingLineNumber = "125">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2889C81D-790D-451E-AAA7-772E58F990A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MemoryCapsule/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "fullTest()"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "2889C81D-790D-451E-AAA7-772E58F990A0 - 111dcc2b59561b64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MemoryCapsule.fullTest() -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/MemoryCapsule/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "127"
+                  endingLineNumber = "127">
+               </Location>
+               <Location
+                  uuid = "2889C81D-790D-451E-AAA7-772E58F990A0 - 111dcc2b59561bbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MemoryCapsule.fullTest() -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/MemoryCapsule/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "126"
+                  endingLineNumber = "126">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42EC4B71-9A23-4F55-9EE4-AE2083BD4E6A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MemoryCapsule/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "fullTest()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "231B2789-11EC-41DA-92F4-68516C09821A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/MemoryManager/MemoryManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "saveImageToMemory(image:imageTitle:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF97D1FE-64D6-4C7A-A81A-2642C2C54A2D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/MemoryManager/MemoryManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31938BF3-5922-48D4-A629-147FDD9B7C95"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/MemoryManager/MemoryManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "saveImageToMemory(image:imageTitle:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ACAE61F8-E04B-46F8-9332-786D6E4DC125"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/LocationManager/LocationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "locationManager(_:didFailWithError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "266F27FA-A1E0-487F-B687-7E4BB3DF3C7E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/LocationManager/LocationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "fetchCurrentLocation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "853C1666-567B-4BB9-BF4C-AAEE249AAAE9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/LocationManager/LocationManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE20D8AD-EA87-4CF1-9DAD-997FB63A3B04"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/MemoryManager/MemoryManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "fetchMemoriesWithImage(for:lat:long:radiusMeters:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BE20D8AD-EA87-4CF1-9DAD-997FB63A3B04 - 7600914cffee4282"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MemoryCapsule.MemoryManager.fetchMemoriesWithImage(for: Swift.String, lat: Swift.Double, long: Swift.Double, radiusMeters: Swift.Double) async throws -&gt; Swift.Optional&lt;Swift.Array&lt;MemoryCapsule.Memory&gt;&gt;"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108">
+               </Location>
+               <Location
+                  uuid = "BE20D8AD-EA87-4CF1-9DAD-997FB63A3B04 - 7600914cffee4282"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MemoryCapsule.MemoryManager.fetchMemoriesWithImage(for: Swift.String, lat: Swift.Double, long: Swift.Double, radiusMeters: Swift.Double) async throws -&gt; Swift.Optional&lt;Swift.Array&lt;MemoryCapsule.Memory&gt;&gt;"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108">
+               </Location>
+               <Location
+                  uuid = "BE20D8AD-EA87-4CF1-9DAD-997FB63A3B04 - 6ed90c0d299f068c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for MemoryCapsule.MemoryManager.fetchMemoriesWithImage(for: Swift.String, lat: Swift.Double, long: Swift.Double, radiusMeters: Swift.Double) async throws -&gt; Swift.Optional&lt;Swift.Array&lt;MemoryCapsule.Memory&gt;&gt;"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108">
+               </Location>
+               <Location
+                  uuid = "BE20D8AD-EA87-4CF1-9DAD-997FB63A3B04 - 6ed90c0d299f068c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for MemoryCapsule.MemoryManager.fetchMemoriesWithImage(for: Swift.String, lat: Swift.Double, long: Swift.Double, radiusMeters: Swift.Double) async throws -&gt; Swift.Optional&lt;Swift.Array&lt;MemoryCapsule.Memory&gt;&gt;"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108">
+               </Location>
+               <Location
+                  uuid = "BE20D8AD-EA87-4CF1-9DAD-997FB63A3B04 - 9f3a8cf9441da8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for MemoryCapsule.MemoryManager.fetchMemoriesWithImage(for: Swift.String, lat: Swift.Double, long: Swift.Double, radiusMeters: Swift.Double) async throws -&gt; Swift.Optional&lt;Swift.Array&lt;MemoryCapsule.Memory&gt;&gt;"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108">
+               </Location>
+               <Location
+                  uuid = "BE20D8AD-EA87-4CF1-9DAD-997FB63A3B04 - 9f3a8cf9441da8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for MemoryCapsule.MemoryManager.fetchMemoriesWithImage(for: Swift.String, lat: Swift.Double, long: Swift.Double, radiusMeters: Swift.Double) async throws -&gt; Swift.Optional&lt;Swift.Array&lt;MemoryCapsule.Memory&gt;&gt;"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF107533-E86C-45B7-9D7B-BB95C5F0F7EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/FireStore/FireStoreManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fetchData(for:lat:long:radiusMeters:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BF107533-E86C-45B7-9D7B-BB95C5F0F7EB - ff77e4b27305f185"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for MemoryCapsule.FireStoreManager.fetchData(for: Swift.String, lat: Swift.Double, long: Swift.Double, radiusMeters: Swift.Double) async throws -&gt; Swift.Optional&lt;Swift.Array&lt;MemoryCapsule.Memory&gt;&gt;"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/FireStore/FireStoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39">
+               </Location>
+               <Location
+                  uuid = "BF107533-E86C-45B7-9D7B-BB95C5F0F7EB - c9ce65656a80945b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Swift.Optional&lt;MemoryCapsule.Memory&gt; in MemoryCapsule.FireStoreManager.fetchData(for: Swift.String, lat: Swift.Double, long: Swift.Double, radiusMeters: Swift.Double) async throws -&gt; Swift.Optional&lt;Swift.Array&lt;MemoryCapsule.Memory&gt;&gt;"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/FireStore/FireStoreManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3272C146-43E1-464D-902A-67A1302F5431"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/FireStore/FireStoreManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchData(for:lat:long:radiusMeters:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DB716E9-0137-49F9-B534-97097F6AACD8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/MemoryManager/MemoryManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "fetchMemoriesForCurrentPlace()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5DB716E9-0137-49F9-B534-97097F6AACD8 - 297056ad6fe0f5be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.MemoryManager.fetchMemoriesForCurrentPlace() async throws -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98">
+               </Location>
+               <Location
+                  uuid = "5DB716E9-0137-49F9-B534-97097F6AACD8 - d5e5030eb4f82bbf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.MemoryManager.fetchMemoriesForCurrentPlace() async throws -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98">
+               </Location>
+               <Location
+                  uuid = "5DB716E9-0137-49F9-B534-97097F6AACD8 - d5e5030eb4f82bbf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.MemoryManager.fetchMemoriesForCurrentPlace() async throws -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98">
+               </Location>
+               <Location
+                  uuid = "5DB716E9-0137-49F9-B534-97097F6AACD8 - c00acd6fd99189bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.MemoryManager.fetchMemoriesForCurrentPlace() async throws -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98">
+               </Location>
+               <Location
+                  uuid = "5DB716E9-0137-49F9-B534-97097F6AACD8 - c00acd6fd99189bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.MemoryManager.fetchMemoriesForCurrentPlace() async throws -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98">
+               </Location>
+               <Location
+                  uuid = "5DB716E9-0137-49F9-B534-97097F6AACD8 - cac3c205816c88f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.MemoryManager.fetchMemoriesForCurrentPlace() throws -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98">
+               </Location>
+               <Location
+                  uuid = "5DB716E9-0137-49F9-B534-97097F6AACD8 - e8b787053b025e8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.MemoryManager.fetchMemoriesForCurrentPlace() throws -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98">
+               </Location>
+               <Location
+                  uuid = "5DB716E9-0137-49F9-B534-97097F6AACD8 - e8b787053b025e8c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.MemoryManager.fetchMemoriesForCurrentPlace() throws -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98">
+               </Location>
+               <Location
+                  uuid = "5DB716E9-0137-49F9-B534-97097F6AACD8 - 44b1efea1e7fac8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.MemoryManager.fetchMemoriesForCurrentPlace() throws -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98">
+               </Location>
+               <Location
+                  uuid = "5DB716E9-0137-49F9-B534-97097F6AACD8 - 44b1efea1e7fac8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 () async -&gt; () in MemoryCapsule.MemoryManager.fetchMemoriesForCurrentPlace() throws -&gt; ()"
+                  moduleName = "MemoryCapsule.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/GouravKumar/Desktop/MemoryCapsule/MemoryCapsule/Services/MemoryManager/MemoryManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98">
                </Location>
             </Locations>
          </BreakpointContent>
