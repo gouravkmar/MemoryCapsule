@@ -84,8 +84,7 @@ class MemoryManager {
             return title
     }
     
-    func fetchMemoriesForCurrentPlace() throws{
-        Task {
+    func fetchMemoriesForCurrentPlace() async  throws->[Memory]?{
             do {
                 let coordinate = try await LocationManager.shared.fetchCurrentLocation()
                 print("📍 Current Location: \(coordinate.latitude), \(coordinate.longitude)")
@@ -95,10 +94,11 @@ class MemoryManager {
                     long: coordinate.longitude,
                     radiusMeters: searchRadius
                 )
+                return memories
             } catch {
                 print("❌ Failed to get location: \(error.localizedDescription)")
+                throw MemoryError.memoryFetchError
             }
-        }
     }
     
     // Fetch all memories for a user
@@ -129,4 +129,9 @@ class MemoryManager {
         //implement later
     }
 
+}
+enum MemoryError: Error {
+    case outOfMemory
+    case memoryFetchError
+    case memoryStoreError
 }

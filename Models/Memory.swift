@@ -39,6 +39,17 @@ struct Memory : Identifiable, Codable {
         case long
         case timestamp
     }
+    
+    static let defaultMemory = Memory(
+        id: UUID().uuidString,
+        name: "Sample User",
+        title: "Beautiful Sunset",
+        description: "A mesmerizing view of the sun setting over the hills.",
+        imageURL: "https://source.unsplash.com/random/300x200",
+        lat: 37.7749,
+        long: -122.4194,
+        timestamp: Date()
+    )
 }
 
 

@@ -17,7 +17,9 @@ struct MemoryCapsuleApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+//            MemoryFeedView()
+            MainTabView()
         }
     }
 }

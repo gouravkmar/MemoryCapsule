@@ -32,6 +32,10 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     func stopUpdatingLocation() {
         locationManager.stopUpdatingLocation()
     }
+    
+    func requestLocation(){
+        self.locationManager.requestLocation()
+    }
 
 
 
