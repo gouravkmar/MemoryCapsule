@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @EnvironmentObject var memoryModel : MemoriesViewModel
+    
     var body: some View {
             ZStack(alignment: .top) {
                 
@@ -15,7 +17,7 @@ struct ProfileView: View {
 
                 VStack(spacing: 0) {
                     
-                    ProfileHeaderView()
+                    ProfileHeaderView(memoriesHere: memoryModel.memories?.count ?? 0)
                         .padding(.top, -30)
                     
                     ProfilePhotoView()

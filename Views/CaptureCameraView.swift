@@ -20,6 +20,8 @@ struct CameraCaptureView: View {
     @State var showTitleView = false
     @State var showDescriptionView = false
     @FocusState private var isTextFieldFocused: Bool
+    @State var showLoader = false
+    @EnvironmentObject var memoryModel : MemoriesViewModel
     var body: some View {
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)
@@ -68,12 +70,26 @@ struct CameraCaptureView: View {
                                             .cornerRadius(2)
                                             .frame(maxWidth: .infinity, alignment: .leading)
                                             .padding(.leading,20)
-                                            
+                                        
                                             .multilineTextAlignment(.leading)
                                             .onTapGesture {
                                                 shouldShowDescription = true
                                             }
                                     }
+                                }
+                            }).overlay(content: {
+                                if showLoader{
+                                    ZStack{
+                                        VStack {
+                                            ProgressView()
+                                                .scaleEffect(1.5)
+                                                .tint(.gray)
+                                                .padding()
+                                            Text("Uploading Memory")
+                                                .foregroundStyle(.white)
+                                        }
+                                        
+                                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
                                 }
                             })
                         if shouldShowDescription || shouldShowTitle {
@@ -123,26 +139,44 @@ struct CameraCaptureView: View {
                             isCameraPresented = true
                         }) {
                             Image(systemName: "camera")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 50, height: 50) // Adjust the size of the camera icon
-                                            .foregroundColor(.white)
-                                            .padding()
-                                            .background(Color.white) // Button background color
-                                            .clipShape(Circle()) // Makes the button round
-                                            .shadow(radius: 10)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50) // Adjust the size of the camera icon
+                                .foregroundColor(.white)
+                                .padding()
+                                .background(Color.white) // Button background color
+                                .clipShape(Circle()) // Makes the button round
+                                .shadow(radius: 10)
                             
                         }.padding(.trailing,53)
                         
-                        Button(action: {
-                            
-                        }) {
+                        Button(
+                            action: {
+                                Task{
+                                    guard let image = capturedImage else { return }
+                                    showLoader = true
+                                    let memory = await MemoryManager.shared.saveImageToMemory(
+                                        image: image,
+                                        imageTitle: title,
+                                        imageDescription: description
+                                    )
+                                    showLoader = false
+                                    if memory != nil {
+                                        DispatchQueue.main.async {
+                                            memoryModel.memories?
+                                                .insert(memory!, at: 0)
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        ) {
                             Image("upload")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 50, height: 50)
                                 .padding()
-
+                            
                         }
                         .padding(.trailing,10)
                         

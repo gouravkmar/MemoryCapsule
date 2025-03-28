@@ -8,6 +8,7 @@
 import Foundation
 import FirebaseStorage
 import UIKit
+import SwiftUICore
 enum CloudError : Error {
     case failedToCompress
     case failedToUpload
@@ -20,7 +21,7 @@ class CloudStorage {
     private init() {}
     private let storageRef = Storage.storage().reference()
     
-    func uploadImage(image : UIImage )async throws-> String{
+    func uploadImage(image : UIImage)async throws-> String{
         guard let imageData = image.jpegData(compressionQuality: 0.8) else {
             throw CloudError.failedToCompress
         }
@@ -35,7 +36,7 @@ class CloudStorage {
         }
     }
     
-    func downloadImage(urlString : String)async throws -> UIImage? {
+    func downloadImage(urlString : String)async throws -> Image? {
         guard let url = URL(string: urlString) else {
             throw CloudError.badURL
         }
@@ -44,6 +45,6 @@ class CloudStorage {
         guard let image = UIImage(data: data) else {
             throw CloudError.imageMissing
         }
-        return image
+        return Image(uiImage: image)
     }
 }

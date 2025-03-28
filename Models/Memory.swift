@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUICore
 struct Memory : Identifiable, Codable {
     let id : String
     let name : String
@@ -16,7 +17,7 @@ struct Memory : Identifiable, Codable {
     let lat : Double
     let long : Double
     let timestamp : Date
-    var image : UIImage? = nil
+    var image : Image? = nil
     func scaled()-> Self {
         return Memory(
             id: id,

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfilePhotoView: View {
+    @EnvironmentObject var memoryModel : MemoriesViewModel
     var body: some View {
         let columns = [
             GridItem(.flexible(), spacing: 10),
@@ -16,8 +17,8 @@ struct ProfilePhotoView: View {
         ]
         ScrollView{
             LazyVGrid(columns: columns){
-                ForEach(0..<20, content: {_ in
-                    Image("bojack")
+                ForEach(memoryModel.memories ?? [], content: {memory in
+                    memory.image?
                         .resizable()
                         .frame(height: 120)
                         .cornerRadius(10)

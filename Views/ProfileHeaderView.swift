@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileHeaderView: View {
+    let memoriesHere : Int
     var body: some View {
         
         VStack{
@@ -38,7 +39,7 @@ struct ProfileHeaderView: View {
                 .frame(maxWidth: .infinity,alignment: .leading)
                 .padding(.leading)
                 VStack{
-                    Text("10")
+                    Text(String(memoriesHere))
                         .font(.title2)
                         .fontWeight(.semibold)
                     Text("Memories Here")
@@ -58,5 +59,5 @@ struct ProfileHeaderView: View {
 }
 
 #Preview {
-    ProfileHeaderView()
+    ProfileHeaderView(memoriesHere: 0)
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainTabView: View {
     @State var selectedTab : Int = 0
+    @StateObject var memoriesData = MemoriesViewModel()
     var body: some View {
         TabView(selection: $selectedTab) {
             MemoryFeedView()
@@ -28,6 +29,7 @@ struct MainTabView: View {
             }.tag(2)
 
         }.toolbarBackground(Color.white)
+            .environmentObject(memoriesData)
     }
 }
 

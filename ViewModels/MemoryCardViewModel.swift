@@ -6,17 +6,17 @@
 //
 
 import Foundation
-import UIKit
+import SwiftUICore
 class MemoryCardViewModel :ObservableObject {
     @Published var memory : Memory
     init(memory: Memory) {
         self.memory = memory
     }
     
-    func getImage()->UIImage{
+    func getImage()->Image{
         if memory.image != nil {
             return memory.image!
         }
-        return UIImage(named: "bojack")!
+        return Image("bojack")
     }
 }

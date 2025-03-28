@@ -12,12 +12,27 @@ struct MemoryCardView: View {
     @ObservedObject var model: MemoryCardViewModel
     
     var body: some View {
-        VStack{ 
-            Image(uiImage: model.getImage())
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .background(Color.black)
-                .cornerRadius(10)
+        VStack{
+            if let image = model.memory.image {
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .background(Color.black)
+                    .cornerRadius(10)
+            }else {
+                ZStack {
+                    Color.gray.opacity(0.5)
+                        .ignoresSafeArea()
+                    ProgressView()
+                        .scaleEffect(1.5)
+                        .tint(.white)
+                        .frame(height: 500)
+                    
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                
+            }
+            
             HStack{
                 Image("user")
                     .resizable()
@@ -36,15 +51,15 @@ struct MemoryCardView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading,10)
         }
-//        .padding(.vertical)
+        //        .padding(.vertical)
         .background(Color.black)
     }
-        
+    
 }
 
 #Preview {
     MemoryCardView(
         model: MemoryCardViewModel.init(memory: Memory.defaultMemory
-        )
+                                       )
     )
 }

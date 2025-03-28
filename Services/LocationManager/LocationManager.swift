@@ -13,11 +13,11 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     static let shared = LocationManager()
     private var locationManager = CLLocationManager()
     var currentLocation: CLLocation?
-
+    var locationFetchCompletion : (()-> Void)?
     private override init() {
         super.init()
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
     }
     
     func requestLocationPermission() {
@@ -33,8 +33,9 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         locationManager.stopUpdatingLocation()
     }
     
-    func requestLocation(){
+    func requestLocation(completion : @escaping ()-> Void){
         self.locationManager.requestLocation()
+        locationFetchCompletion = completion
     }
 
 
@@ -44,6 +45,8 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         print("✅ Location Updated: \(location.coordinate.latitude), \(location.coordinate.longitude)")
         DispatchQueue.main.async {
             self.currentLocation = location
+            self.locationFetchCompletion?()
+            self.locationFetchCompletion = nil
         }
     }
 
@@ -53,9 +56,6 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
 
     func fetchCurrentLocation() async throws -> CLLocationCoordinate2D {
         return try await withCheckedThrowingContinuation { continuation in
-            DispatchQueue.main.async {
-                self.locationManager.requestLocation()
-            }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                 if let location = self.currentLocation {
                     continuation.resume(returning: location.coordinate)
