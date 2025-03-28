@@ -13,7 +13,11 @@ struct MemoryFeedView: View {
     var body: some View {
         ZStack{
             Color.black.ignoresSafeArea()
-            FeedScroller(memories: memoryFeed.memories!)
+            VStack{
+                MainFeedHeader()
+                FeedScroller(memories: memoryFeed.memories!).padding(.top,-60)
+                
+            }
         }
     }
 }
@@ -29,6 +33,7 @@ struct FeedScroller : View {
             ForEach(0..<5, content: {_ in
                     MemoryCardView(model: MemoryCardViewModel(memory: Memory.defaultMemory))
                         .listRowBackground(Color.clear)
+                        .listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                 })
 //            else {
 //                if memories.isEmpty {

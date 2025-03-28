@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 struct CameraCaptureView: View {
-    @State private var capturedImage: UIImage? = UIImage(named: "bojack")
+    @State private var capturedImage: UIImage?
     @State private var isCameraPresented = false
     @Binding var selectedTab: Int
     @State var isCameraCancelled = false

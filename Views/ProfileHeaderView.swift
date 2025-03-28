@@ -49,7 +49,7 @@ struct ProfileHeaderView: View {
             }
         }.padding()
         .frame(maxWidth: .infinity)
-        .background(Color.yellow)
+        .background(Color.yellow.opacity(0.85))
         .cornerRadius(20)
 //        .padding(.horizontal,10)
         .ignoresSafeArea()

@@ -28,6 +28,7 @@
 		5FC19A5C2D95E3520002EF38 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC19A5B2D95E3520002EF38 /* CameraView.swift */; };
 		5FC19A5E2D95E51E0002EF38 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC19A5D2D95E51E0002EF38 /* CameraViewModel.swift */; };
 		5FC19A6F2D95E94E0002EF38 /* CaptureCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC19A6E2D95E94E0002EF38 /* CaptureCameraView.swift */; };
+		5FC19A832D97048E0002EF38 /* MainFeedHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC19A822D97048E0002EF38 /* MainFeedHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		5FC19A5B2D95E3520002EF38 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		5FC19A5D2D95E51E0002EF38 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		5FC19A6E2D95E94E0002EF38 /* CaptureCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCameraView.swift; sourceTree = "<group>"; };
+		5FC19A822D97048E0002EF38 /* MainFeedHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeedHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -252,6 +254,7 @@
 				5FC19A4B2D9586BA0002EF38 /* MemoryCardView.swift */,
 				5FC19A592D95D6B70002EF38 /* ProfilePhotosView.swift */,
 				5FC19A512D95A4230002EF38 /* MemoryFeedView.swift */,
+				5FC19A822D97048E0002EF38 /* MainFeedHeader.swift */,
 				5FC19A532D95C4A00002EF38 /* MainTabView.swift */,
 				5FC19A552D95CCF30002EF38 /* ProfileView.swift */,
 				5FC19A572D95CDB50002EF38 /* ProfileHeaderView.swift */,
@@ -428,6 +431,7 @@
 				5FC19A212D94B29D0002EF38 /* LocationManager.swift in Sources */,
 				5FC19A1B2D949F840002EF38 /* CloudStorage.swift in Sources */,
 				5FC19A122D947E010002EF38 /* FireStoreManager.swift in Sources */,
+				5FC19A832D97048E0002EF38 /* MainFeedHeader.swift in Sources */,
 				5FC19A562D95CCF30002EF38 /* ProfileView.swift in Sources */,
 				5FC19A522D95A4230002EF38 /* MemoryFeedView.swift in Sources */,
 			);
